@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carmine · Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Canvas de fundo (réptil) -->
+    <canvas id="bg"></canvas>
+
+    <!-- Tela HOME: card com o menu central -->
+    <div id="home-overlay" class="overlay fade-in">
+      <div class="menu-box">
+        <h1 class="menu-title">Carmine</h1>
+        <nav class="center-menu">
+          <a class="menu-btn" data-nav="home">Home</a>
+          <a class="menu-btn" data-nav="portfolio">Portfólio</a>
+          <a class="menu-btn" data-nav="contact">Contato</a>
+        </nav>
+      </div>
+      <p class="hint">mova o mouse — clique para mudar a cor</p>
+    </div>
+
+    <!-- “Páginas” (SPA) -->
+    <section id="portfolio" class="page hidden">
+      <header class="topbar">
+        <a class="toplink" data-nav="home">← Home</a>
+        <h1>Portfólio</h1>
+      </header>
+      <div class="content">
+        <p>Aqui entram seus projetos. Depois montamos os cards.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="page hidden">
+      <header class="topbar">
+        <a class="toplink" data-nav="home">← Home</a>
+        <h1>Contato</h1>
+      </header>
+      <div class="content">
+        <p>Envie um e-mail: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
+      </div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
